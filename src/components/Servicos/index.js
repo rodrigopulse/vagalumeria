@@ -33,8 +33,8 @@ export default class Servicos extends Component {
           </div>
           <div className = 'servicos__card-container'>
             <Card
-              titulo = 'Criação de e-commerce'
-              descricao = 'Plataforma completa de e-commerce gerenciável, com controle de estoque, cálculo de frete e pagamento via PagSeguro e Mercado Pago.'
+              titulo = 'Criação de ecommerce'
+              descricao = 'Plataforma completa de ecommerce gerenciável, com controle de estoque, cálculo de frete e pagamento via PagSeguro e Mercado Pago.'
               icone = { EcommerceIcone }
             />
           </div>
