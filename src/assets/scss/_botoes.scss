@@ -1,0 +1,22 @@
+.botao {
+  width: auto;
+  height: 49px;
+  border-radius: 14px;
+  background: #fdc978;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 25px;
+  color: #6b207e;
+  font-weight: 700;
+  border: 0;
+  padding: 0 40px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:active, &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: #e5a33c;
+    color: #fff;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+  }
+}

@@ -32,6 +32,7 @@ export default class Hero extends Component {
           <div className = 'hero__conteudo'>
             <Fade bottom>
               <h1 className = 'hero__titulo'>crie seu site e decole nas vendas!</h1>
+              <button className = 'botao'>vamos conversar!</button>
             </Fade>
           </div>
         </div>
