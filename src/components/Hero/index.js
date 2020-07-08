@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
-import Fade from 'react-reveal/Fade';
 
 import './hero.scss'
 
@@ -30,10 +29,8 @@ export default class Hero extends Component {
 
         <div className = 'container container--flex-height'>
           <div className = 'hero__conteudo'>
-            <Fade bottom>
-              <h1 className = 'hero__titulo'>crie seu site e decole nas vendas!</h1>
-              <button className = 'botao'>vamos conversar!</button>
-            </Fade>
+            <h1 className = 'hero__titulo'>crie seu site e decole nas vendas!</h1>
+            <button className = 'botao'>vamos conversar!</button>
           </div>
         </div>
 

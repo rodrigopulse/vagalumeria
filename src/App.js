@@ -4,6 +4,7 @@ import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Servicos from './components/Servicos'
+import Portfolio from './components/Portfolio'
 
 import './App.scss'
 export default class LottieControl extends React.Component {
@@ -15,6 +16,7 @@ export default class LottieControl extends React.Component {
         <Header />
         <Hero />
         <Servicos />
+        <Portfolio />
       </div>
     )
   }
