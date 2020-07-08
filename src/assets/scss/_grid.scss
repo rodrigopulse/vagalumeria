@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 1050px;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  &--flex {
+    display: flex;
+  }
+  &--flex-height {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

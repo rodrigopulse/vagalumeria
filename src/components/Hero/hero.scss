@@ -1,0 +1,22 @@
+@import '../../assets/scss/grid';
+
+.hero {
+  height: 70vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: left top;
+  &__conteudo {
+    max-width: 405px;
+    left: 0;
+    @media screen and (min-width: 1500px) {
+      max-width: 380px;
+    }
+  }
+  &__titulo {
+    font-size: 47px;
+    color: #fff;
+    line-height: 49px;
+  }
+}
