@@ -7,11 +7,6 @@ import Carregando from '../Carregando'
 
 import './contato.scss'
 
-const Modal = () => {
-  return (
-    <div className = 'modal-mensagem'></div>
-  )
-}
 export default class Contato extends Component {
   state = {
     carregando: false,
@@ -38,22 +33,38 @@ export default class Contato extends Component {
         email: '',
         mensagem: '',
         carregando: false,
-				showModal: true
+        showModal: true,
+        modalMensagem: 'Mensagem enviada, logo entraremos em contato'
 			});
     })
-    .catch( (response) => {
-      this.setState({carregando: false});
-      console.log(response);
+    .catch( () => {
+      this.setState({
+        carregando: false,
+        showModal: true,
+        modalMensagem: 'Ocorreu um erro no envio da mensagem, por mande mensagem direto para contato@vagalumeria.com.br'
+      });
     });
   }
   handleChange = (param, e) => {
     this.setState({ [param]: e.target.value })
   }
+  handleModal() {
+    this.setState({
+      showModal: !this.state.showModal
+    })
+  }
   render() {
     return (
       <div className = 'container container--full contato'>
         { this.state.carregando && <Carregando /> }
-        { this.state.carregando && <Modal /> }
+        { this.state.showModal &&
+          <div className = 'modal-mensagem'>
+            <div className = 'modal-mensagem__conteudo'>
+              <p className = 'modal-mensagem__mensagem'>{ this.state.modalMensagem }</p>
+              <button onClick = { () => { this.handleModal() }} className = 'botao'>Fechar</button>
+            </div>
+          </div>
+        }
         <div className = 'container container--flex'>
 
           <div className = 'contato__esquerda'>

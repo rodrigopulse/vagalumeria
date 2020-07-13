@@ -50,3 +50,30 @@
     font-family: 'Roboto', sans-serif;
   }
 }
+.modal-mensagem {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .8);
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__conteudo {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 14px;
+  }
+  &__mensagem {
+    text-align: center;
+  }
+}
