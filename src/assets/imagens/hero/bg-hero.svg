@@ -1,0 +1,1 @@
+.a{fill:#fff;stroke:#707070;}.b{clip-path:url(#a);}.c{fill:url(#b);}.d{opacity:0.3;mix-blend-mode:multiply;isolation:isolate;fill:url(#c);}.e{fill:url(#d);}
