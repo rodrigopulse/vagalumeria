@@ -34,9 +34,58 @@
   border-radius: 100%;
   width: 53px;
   height: 53px;
-  font-size: 19px;
-  font-weight: 700;
   color: #6B207E;
   margin-top: 0;
   top: 10px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: #e5a33c;
+  }
+  &:after {
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+.modal-portfolio {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__conteudo {
+    width: 100%;
+    max-height: 80vh;
+    max-width: 774px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    position: relative;
+  }
+  &__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c63a95;
+  }
+  &__fechar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:active, &:focus {
+      outline: none;
+    }
+  }
 }
