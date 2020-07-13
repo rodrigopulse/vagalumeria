@@ -1,0 +1,52 @@
+.contato {
+  background: #C63A95;
+  &__esquerda {
+    width: 50%;
+    padding: 20px 10px 20px 0;
+    position: relative;
+  }
+  &__direita {
+    width: 50%;
+    padding: 20px 0 20px 10px;
+    position: relative;
+  }
+  &__titulo {
+    font-size: 34px;
+    font-weight: 700;
+    color: #FDC978;
+    margin: 0;
+  }
+  &__texto {
+    font-size: 16px;
+    color: #fff;
+  }
+  &__imagem {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  // Formulário
+  &__input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    font-size: 20px;
+    color: #C63A95;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+  }
+  &__textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    font-size: 20px;
+    color: #C63A95;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
