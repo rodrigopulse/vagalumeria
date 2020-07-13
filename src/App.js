@@ -7,6 +7,7 @@ import Servicos from './components/Servicos'
 import Portfolio from './components/Portfolio'
 import Depoimentos from './components/Depoimentos'
 import Contato from './components/Contato'
+import Footer from './components/Footer'
 
 import './App.scss'
 export default class LottieControl extends React.Component {
@@ -21,6 +22,7 @@ export default class LottieControl extends React.Component {
         <Portfolio />
         <Depoimentos />
         <Contato />
+        <Footer />
       </div>
     )
   }

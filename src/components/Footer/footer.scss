@@ -1,0 +1,23 @@
+.footer {
+  padding: 40px 20px;
+  background: #6B207E;
+  &__conteudo {
+    text-align: center;
+  }
+  &__whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo-avatar {
+    margin-bottom: 20px;
+  }
+  &__icone-whats {
+    margin-right: 10px;
+  }
+  &__texto {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
