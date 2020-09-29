@@ -8,6 +8,9 @@
     margin: 0 auto;
     position: relative;
     display: flex;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &__card-container {
     width: 33.33%;
@@ -15,10 +18,20 @@
     display: block;
     position: relative;
     padding: 0 10px;
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
     &:first-child {
       padding: 0 10px 0 20px;
+      @media (max-width: 768px) {
+        padding: 0 10px;
+      }
     }
     &:last-child {
+      @media (max-width: 768px) {
+        padding: 0 10px;
+      }
       padding: 0 20px 0 10px;
     }
   }

@@ -1,4 +1,10 @@
 .depoimentos {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+  .container--flex {
+    flex-direction: column;
+  }
   &__titulo {
     font-size: 30px;
     font-weight: 700;
@@ -8,8 +14,17 @@
   &__quadro {
     width: 50%;
     padding: 20px 10px 20px 0;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 10px;
+    }
     &:last-child {
       padding: 20px 0 20px 10px;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+      }
     }
   }
   &__conteudo {

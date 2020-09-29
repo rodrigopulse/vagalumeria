@@ -1,6 +1,6 @@
 .card-portfolio {
   width: 100%;
-  height: 256px;
+  height: auto;
   background: #dfdfdf;
   cursor: pointer;
   &__imagem {
@@ -65,11 +65,27 @@
     padding: 20px;
     border-radius: 14px;
     position: relative;
+    overflow-y: auto;
+    img {
+      position: relative;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+  }
+  &__imagem {
+    max-width: 100%;
+    margin: 0 auto 15px auto;
+    position: relative;
   }
   &__titulo {
     font-size: 22px;
     font-weight: 700;
     color: #c63a95;
+  }
+  &__subtitulo {
+    font-size: 15px;
+    font-weight: 400;
+    color: #505050;
   }
   &__fechar {
     position: absolute;
@@ -87,5 +103,21 @@
     &:active, &:focus {
       outline: none;
     }
+    img {
+      margin: 0;
+    }
   }
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-bottom: 15px
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

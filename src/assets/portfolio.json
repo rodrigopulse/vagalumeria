@@ -1,44 +1,104 @@
 [
+
   {
-    "titulo": "Teste",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg",
+    "titulo": "Site Star Sonic",
+    "thumb": "http://vagalumeria.com.br/uploads_imagens/starsonic-site-thumb.jpg",
     "conteudo": {
-      "titulo": "Teste"
+      "titulo": "Site desenvolvido para a Star Sonic",
+      "subtitulo": "O Site foi todo desenvolvido em React, o que deixou o site rápido e programado nas últimas tecnologias de mercado",
+      "imagens": [
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/starsonic-1.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/starsonic-2.jpg"}
+      ],
+      "video": "https://www.youtube.com/embed/y9aG0rPsp4Q"
     }
   },
+
   {
-    "titulo": "Teste de Teste 1",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg",
+    "titulo": "E-commerce Pulse",
+    "thumb": "http://vagalumeria.com.br/uploads_imagens/geeks-loja-thumb.jpg",
     "conteudo": {
-      "titulo": "Teste 1"
+      "titulo": "Loja virtual Pulse",
+      "subtitulo": "Loja desenvolvida para a marca de produtos geeks Pulse, loja toda gerenciável com gerenciamento automático de estoque, integrada com o pagar.me, calculo de frete, promoções e etc.",
+      "imagens": [
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/loja-virtual-pulse-geeks-1.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/loja-virtual-pulse-geeks-2.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/loja-virtual-pulse-geeks-3.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/loja-virtual-pulse-geeks-4.jpg"}
+      ],
+      "video": ""
     }
   },
+
   {
-    "titulo": "Teste de Teste 2",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg"
+    "titulo": "APP Mais Clorofila",
+    "thumb": "http://vagalumeria.com.br/uploads_imagens/maisclorofila-app-thumb.jpg",
+    "conteudo": {
+      "titulo": "Aplicativo Mais Clorofila",
+      "subtitulo": "Aplicativo desenvolvido para usuários administrarem o seu jardim ou sua horta",
+      "imagens": [
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/app-mais-clorofila-1.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/app-mais-clorofila-2.jpg"}
+      ],
+      "video": ""
+    }
   },
+
   {
-    "titulo": "Teste de Teste 3",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg"
+    "titulo": "Site MK1",
+    "thumb": "http://vagalumeria.com.br/uploads_imagens/mk1-site-thumb.jpg",
+    "conteudo": {
+      "titulo": "Site desenvolvido para a MK1",
+      "subtitulo": "Fizemos um site simples e bonito, que atendesse bem o público da academia. Combinamos que o site seria de 1 página somente, para dar todas as informações necessárias aos usuário rapidamente.",
+      "imagens": [
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/site-mk1-1.jpg"}
+      ],
+      "video": "https://www.youtube.com/embed/zSFK1DhGr4g"
+    }
   },
+
   {
-    "titulo": "Teste de Teste 4",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg"
+    "titulo": "Site Pagu Pictures",
+    "thumb": "http://vagalumeria.com.br/uploads_imagens/pagu-site-thumb.jpg",
+    "conteudo": {
+      "titulo": "Site desenvolvido para a produtora de filmes Pagu Pictures",
+      "subtitulo": "Desenvolvemos um site totalmente gerenciável, onde a equipe da Pagu que adiciona os filmes no catálogo.",
+      "imagens": [
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/site-pagu-1.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/site-pagu-2.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/site-pagu-3.jpg"}
+      ],
+      "video": "https://www.youtube.com/embed/K4lmw7ruxK8"
+    }
   },
+
   {
-    "titulo": "Teste de Teste 5",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg"
+    "titulo": "Site Rafael Klein",
+    "thumb": "http://vagalumeria.com.br/uploads_imagens/rafael-site-thumb.jpg",
+    "conteudo": {
+      "titulo": "Site desenvolvido para o fotógrafo Rafael Klein",
+      "subtitulo": "Desenvolvemos um site totalmente gerenciável, em que o próprio fotógrafo consegue administrar o seu portfolio",
+      "imagens": [
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/site-rafael-klein-1.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/site-rafael-klein-2.jpg"}
+      ],
+      "video": ""
+    }
   },
+
   {
-    "titulo": "Teste de Teste 6",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg"
-  },
-  {
-    "titulo": "Teste de Teste 7",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg"
-  },
-  {
-    "titulo": "Teste de Teste 8",
-    "thumb": "http://vagalumeria.com.br/uploads_imagens/portfolio.jpg"
+    "titulo": "Site House",
+    "thumb": "http://vagalumeria.com.br/uploads_imagens/house-site-thumb.jpg",
+    "conteudo": {
+      "titulo": "Site desenvolvido para a banda House",
+      "subtitulo": "Desenvolvemos um site totalmente gerenciável, em que o a banda consegue administrar agenda de shows, fotos e discografia",
+      "imagens": [
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/house-1.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/house-2.jpg"},
+        {"imagem": "http://vagalumeria.com.br/uploads_imagens/house-3.jpg"}
+      ],
+      "video": ""
+    }
   }
+
 ]

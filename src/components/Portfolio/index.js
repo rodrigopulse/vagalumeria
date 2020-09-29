@@ -25,7 +25,10 @@ const CardPortfolio = (props) => {
 export default class Portfolio extends Component {
   state = {
     modal: false,
-    tituloModal: ''
+    tituloModal: '',
+    subtituloModal: '',
+    imagens: [],
+    video: ''
   }
 
   constructor() {
@@ -33,10 +36,22 @@ export default class Portfolio extends Component {
     this.abreModal = this.abreModal.bind(this);
   }
   abreModal(conteudo){
-    this.setState({
-      modal: !this.state.modal,
-      tituloModal: conteudo.titulo
-    })
+    if(this.state.modal) {
+      this.setState({
+        modal: false,
+        tituloModal: '',
+        subtituloModal: '',
+        imagens: []
+      })
+    } else {
+      this.setState({
+        modal: !this.state.modal,
+        tituloModal: conteudo.titulo,
+        subtituloModal: conteudo.subtitulo,
+        imagens: conteudo.imagens,
+        video: conteudo.video
+      })
+    }
   }
   render() {
 
@@ -49,6 +64,19 @@ export default class Portfolio extends Component {
                 <img src = { BotaoFechar } alt = 'Fechar' />
               </button>
               <h3 className = 'modal-portfolio__titulo'> { this.state.tituloModal } </h3>
+              { this.state.subtituloModal !== '' &&
+                <h4 className = 'modal-portfolio__subtitulo'> { this.state.subtituloModal } </h4>
+              }
+              {this.state.video !== '' &&
+                <div className="video-wrapper">
+                  <iframe width="560" height="315" src={this.state.video} title="Vídeo Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              }
+              { this.state.imagens.length >= 1 &&
+                this.state.imagens.map ( (valor, index) => (
+                  <img className="modal-portfolio__imagem" key = { index } src = { valor.imagem } alt = 'portfolio' />
+                ))
+              }
             </div>
           </div>
         }
