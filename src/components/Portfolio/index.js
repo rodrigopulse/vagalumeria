@@ -75,10 +75,10 @@ export default class Portfolio extends Component {
       <div className = 'container container--full'>
         {this.state.modal &&
           <div className = 'modal-portfolio'>
+            <button onClick = { () => { this.abreModal('') }} className = 'modal-portfolio__fechar'>
+              <img src = { BotaoFechar } alt = 'Fechar' />
+            </button>
             <div className = 'modal-portfolio__conteudo'>
-              <button onClick = { () => { this.abreModal('') }} className = 'modal-portfolio__fechar'>
-                <img src = { BotaoFechar } alt = 'Fechar' />
-              </button>
               <h3 className = 'modal-portfolio__titulo'> { this.state.tituloModal } </h3>
               { this.state.subtituloModal !== '' &&
                 <h4 className = 'modal-portfolio__subtitulo'> { this.state.subtituloModal } </h4>
@@ -94,6 +94,7 @@ export default class Portfolio extends Component {
                 ))
               }
             </div>
+            <div className = 'modal-portfolio__overlay' onClick = { () => { this.abreModal('') }}></div>
           </div>
         }
         {this.state.sliderPerView !== 0 &&

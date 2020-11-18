@@ -52,7 +52,6 @@
 .modal-portfolio {
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, .6);
   position: fixed;
   top: 0;
   left: 0;
@@ -60,6 +59,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &__overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    z-index: 6;
+  }
   &__conteudo {
     width: 100%;
     max-height: 80vh;
@@ -69,6 +75,7 @@
     border-radius: 14px;
     position: relative;
     overflow-y: auto;
+    z-index: 7;
     img {
       position: relative;
       display: block;
@@ -92,8 +99,8 @@
   }
   &__fechar {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 10px;
     background: none;
     width: 40px;
     height: 40px;
@@ -103,6 +110,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 7;
     &:active, &:focus {
       outline: none;
     }
