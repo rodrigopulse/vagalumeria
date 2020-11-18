@@ -3,7 +3,10 @@
     padding: 0;
   }
   .container--flex {
-    flex-direction: column;
+    flex-direction: row;
+    @media (max-width: 640px) {
+      flex-direction: column;
+    }
   }
   &__titulo {
     font-size: 30px;

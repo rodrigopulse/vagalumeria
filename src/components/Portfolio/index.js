@@ -28,13 +28,15 @@ export default class Portfolio extends Component {
     tituloModal: '',
     subtituloModal: '',
     imagens: [],
-    video: ''
+    video: '',
+    sliderPerView: 0
   }
 
   constructor() {
     super()
     this.abreModal = this.abreModal.bind(this);
   }
+
   abreModal(conteudo){
     if(this.state.modal) {
       this.setState({
@@ -53,6 +55,20 @@ export default class Portfolio extends Component {
       })
     }
   }
+
+  componentDidMount() {
+    if(window.innerWidth <= 768) {
+      console.log('mobile')
+      this.setState({
+        sliderPerView: 3
+      })
+    } else {
+      this.setState({
+        sliderPerView: 5
+      })
+    }
+  }
+
   render() {
 
     return (
@@ -80,17 +96,19 @@ export default class Portfolio extends Component {
             </div>
           </div>
         }
+        {this.state.sliderPerView !== 0 &&
         <Swiper
-          spaceBetween={0}
-          slidesPerView={5}
-          navigation
-        >
-          { PortfolioJson.map( (valor, index) => (
-            <SwiperSlide key = { index }  onClick = { () => this.abreModal(valor.conteudo) }>
-                <CardPortfolio titulo = { valor.titulo } thumb = { valor.thumb } />
-            </SwiperSlide>
-          ) ) }
-        </Swiper>
+            spaceBetween={0}
+            slidesPerView={this.state.sliderPerView}
+            navigation
+          >
+            { PortfolioJson.map( (valor, index) => (
+              <SwiperSlide key = { index }  onClick = { () => this.abreModal(valor.conteudo) }>
+                  <CardPortfolio titulo = { valor.titulo } thumb = { valor.thumb } />
+              </SwiperSlide>
+            ) ) }
+          </Swiper>
+        }
       </div>
     )
 

@@ -38,6 +38,9 @@
   margin-top: 0;
   top: 10px;
   transition: all .3s ease-in-out;
+  @media (max-width: 768px) {
+    display: none;
+  }
   &:hover {
     background: #e5a33c;
   }
