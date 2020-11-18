@@ -18,14 +18,22 @@ export default class Contato extends Component {
   }
   handleSubmit(e) {
     e.preventDefault()
-    const { nome, telefone, email, mensagem } = this.state
-    const data = new FormData ()
-    data.append ('nome', nome)
-    data.append ('telefone', telefone)
-    data.append ('email', email)
-    data.append ('mensagem', mensagem)
     this.setState({carregando: true});
-    axios.post('http://vagalumeria.com.br/sendmail/vagalumeria-contato.php', data)
+    axios({
+      url: 'https://api.emailjs.com/api/v1.0/email/send',
+      data: {
+        service_id: 'service_eaqdets',
+        template_id: 'template_2jno3co',
+        user_id: 'user_W0GSBuOvRb0FvEx0nGmp8',
+        template_params: {
+          nome: this.state.nome,
+          email: this.state.email,
+          telefone: this.state.telefone,
+          mensagem: this.state.mensagem
+        }
+      },
+      method: 'POST'
+    })
     .then( () => {
 			this.setState({
 				nome: '',
